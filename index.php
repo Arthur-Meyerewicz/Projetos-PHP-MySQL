@@ -25,8 +25,8 @@ if(isset($_FILES['arquivo'])){ //Estrutura para verificar se o arquivo foi envia
     move_uploaded_file($_FILES['arquivo']['tmp_name'], $diretorio . $novo_nome); 
     //função para upload dos arquivos, com parametro para salvar os arquivos no diretório concatenado com seu novo nome. 
     
-    $sql_code = "INSERT INTO arquivo(id, arquivo, data) VALUES('','$novo_nome', NOW())";
-    //inserção de dados no banco com uma função do "MySQL" para registrar a hora de envio.
+    $sql_code = "INSERT INTO arquivo(id, arquivo) VALUES('','$novo_nome')";
+    //inserção de dados no banco.
     
     if(mysqli_query($link, $sql_code)) //verifica se o arquivo foi enviado.
         $msg = "Arquivo enviado com sucesso!";
