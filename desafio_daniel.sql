@@ -29,9 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `arquivo` (
   `id` int(11) NOT NULL,
-  `arquivo` varchar(200) NOT NULL,
-  `data` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `arquivo` varchar(200) NOT NULL)
+  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Índices para tabelas despejadas
